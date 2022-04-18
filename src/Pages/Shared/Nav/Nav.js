@@ -12,7 +12,7 @@ const Nav = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <div className='navbar-nav d-flex justify-content-between w-25'>
+                        <div className='navbar-nav d-flex justify-content-between w-50'>
                             <a className='nav-item text-decoration-none text-white' href="/#services">Services</a>
                             <a className='nav-item text-decoration-none text-white' href="/#reviews">Reviews</a>
                             <Link
@@ -21,6 +21,9 @@ const Nav = () => {
                             <Link
                                 className='nav-item text-decoration-none text-white'
                                 to={'/about'}>About Us</Link>
+                            <Link
+                                className='nav-item text-decoration-none text-white'
+                                to={'/login'}>Log In</Link>
                         </div>
                     </div>
                 </div>
