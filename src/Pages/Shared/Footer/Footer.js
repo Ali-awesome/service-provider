@@ -1,9 +1,10 @@
 import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
     return (
-        <div>
-            <h6>Copyright by Mohammad Sanullah <span>&copy;</span> {(new Date().getFullYear())}</h6>
+        <div className='footer bg-dark d-flex justify-content-center mt-5 align-items-center'>
+            <h6 className='text-white text-center'><small>Copyright by Mohammad Sanullah</small><br /> <span>&copy;</span> {(new Date().getFullYear())}</h6>
         </div>
     );
 };
