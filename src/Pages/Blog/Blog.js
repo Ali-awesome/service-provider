@@ -5,16 +5,28 @@ const Blog = () => {
     return (
         <div className='blog-container mt-5'>
             <div className="blog">
-                <h3 className='heading'>What is Semantic Tag?</h3>
-                <p>Semantic HTML tags provide information about the contents of those tags that goes beyond just how they look on a page. Text that is enclosed in the tag is immediately recognized by the browser as some type of coding language.</p>
+                <h3 className='heading'>Difference between authorization and authentication.</h3>
+                <p>Simply put, authentication is the process of verifying who someone is, whereas authorization is the process of verifying what specific applications, files, and data a user has access to. The situation is like that of an airline that needs to determine which people can come on board. The first step is to confirm the identity of a passenger to make sure they are who they say they are. Once a passenger’s identity has been determined, the second step is verifying any special services the passenger has access to, whether it’s flying first-class or visiting the VIP lounge.
+
+                    In the digital world, authentication and authorization accomplish these same goals. Authentication is used to verify that users really are who they represent themselves to be. Once this has been confirmed, authorization is then used to grant the user permission to access different levels of information and perform specific functions, depending on the rules established for different types of users.</p>
             </div>
             <div className="blog">
-                <h3 className='heading'>Inline VS Inline-Block element</h3>
-                <p>display: inline-block brought a new way to create side by side boxes that collapse and wrap properly depending on the available space in the containing element. It makes layouts that were previously accomplished with floats easier to create. No need to clear floats anymore.
-
-                    Compared to display: inline, the major difference is that inline-block allows to set a width and height on the element. Also, with display: inline, top and bottom margins and paddings are not respected, and with display: inline-block they are.
-
-                    Now, the difference between display: inline-block and display: block is that, with display: block, a line break happens after the element, so a block element does not sit next to other elements.</p>
+                <h3 className='heading'>Why are you using firebase?</h3>
+                <p>With Firebase, you can focus your time and attention on developing the best app(s) possible for your business. Since the operations and internal functions are so solid, and taken care of by the Firebase interface, you can spend more time developing the high quality app that users are going to want to use.
+                    Alternatives of firbase is Parse, Back4app, AWSfamily.
+                </p>
+            </div>
+            <div className="blog">
+                <h3 className='heading'>What other services does `firebase` provide other than authentication</h3>
+                <p> Cloud Firestore,
+                    Cloud Functions,
+                    Hosting,
+                    Cloud Storage,
+                    Google Analytics,
+                    Predictions,
+                    Cloud Messaging,
+                    Dynamic Links,
+                    Remote Config, are other services of firebase</p>
             </div>
 
         </div>
