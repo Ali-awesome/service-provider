@@ -1,8 +1,16 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, NavLink } from 'react-router-dom';
+import auth from '../../../firebase.init';
 import logo from '../../../Images/Logo/logo.png';
+import { signOut } from 'firebase/auth';
 
 const Nav = () => {
+    const [user] = useAuthState(auth);
+
+    const handleSignOut = () => {
+        signOut(auth);
+    }
     return (
         <div className='sticky-top'>
             <nav className="navbar navbar-expand-lg navbar-light bg-dark">
@@ -21,9 +29,13 @@ const Nav = () => {
                             <Link
                                 className='nav-item text-decoration-none text-white'
                                 to={'/about'}>About Us</Link>
-                            <Link
-                                className='nav-item text-decoration-none text-white'
-                                to={'/login'}>Log In</Link>
+                            {
+                                user ?
+                                    <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>sign out</button>
+                                    :
+                                    <Link className='text-decoration-none text-white' as={Link} to="login">
+                                        Login
+                                    </Link>}
                         </div>
                     </div>
                 </div>

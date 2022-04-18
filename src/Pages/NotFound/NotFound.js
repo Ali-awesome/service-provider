@@ -7,7 +7,7 @@ const NotFound = () => {
     return (
         <div className='notfound justify-content-center'>
             <div className='mt-3 d-flex justify-content-center'>
-                <h1 className='text-dark'>404 Not Fund</h1>
+                <h1 className='text-dark'>404 Not Found</h1>
             </div>
             <div className='image d-flex justify-content-center'>
                 <img className='noimg' src={no} alt="" />
